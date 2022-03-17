@@ -20,6 +20,7 @@ section
 .game_title
   margin: 0
   margin-top: .5em
+  padding: 0 1em
   font-size: 4.2rem 
 
 .game_container
@@ -34,15 +35,15 @@ section
 
 .cell 
   font-weight: bold
-  width: 120px
-  height: 120px
+  width: 7.5rem
+  height: 7.5rem
   margin: .1em
   border-radius: 13px
   border: 2px solid $dark
   background: $light
   cursor: pointer
   line-height: 130px
-  font-size: 80px
+  font-size: 5rem
 
   &:hover
     background: lighten($light, 3)
@@ -68,7 +69,7 @@ section
   background: transparentize($dark, .6)
   backdrop-filter: blur(10px);
   display: flex
-  position: absolute
+  position: fixed
   top: 0
 
 .optionWindow
@@ -77,7 +78,7 @@ section
   color: #e4e4e4
   padding: 3em
   border-radius: 15px
-  width: 300px
+  width: 18.75rem
   margin: auto
 
   & h1
@@ -104,3 +105,6 @@ button
     cursor: pointer
     background: lighten($dark, 7)
     
+@media screen and (max-width: 745px) 
+  html
+    font-size: .7rem
