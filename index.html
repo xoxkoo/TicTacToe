@@ -7,12 +7,13 @@
 
   <link rel="stylesheet" href="css/base.min.css">
 
-  <script defer src="js/app.js"></script>
+  <!-- <script defer src="js/app.js"></script> -->
+  <script defer src="js/script.js" type="module"></script>
 </head>
 <body>
   
   <section>
-    <h1 class="game_title">Tic Tac Toe</h1>
+    <h1 class="game_title">Tic Tac Toe ❌ 🅾️</h1>
     <div class="game_container">
       
       <div class="row">
@@ -35,6 +36,15 @@
 
     </div>
     <h2 class="game_status"></h2>
+
+    <div class="background">
+      <div class="optionWindow">
+        <h1>Choose your character</h1>
+        <button id="buttonX">X</button>
+        <button id="buttonO">O</button>
+      </div>
+    </div>
+
     <button class="game_restart">Restart Game</button>
 </section>
 
